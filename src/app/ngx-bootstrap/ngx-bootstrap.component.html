@@ -1,7 +1,7 @@
 <ng-template #popTemplate>
   <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
 </ng-template>
-
+<h3>Scroll - Adaptative false</h3>
 <div>
   <div class="container" style="overflow-y: auto;">
     <button type="button" class="btn btn-danger"
@@ -10,7 +10,7 @@
             [container]="'body'" 
             [outsideClick]="true"
             [adaptivePosition]="false">
-      overflow-y: auto;
+      Popover Right
     </button>
   </div>
 
@@ -21,20 +21,21 @@
             [container]="'body'" 
             [outsideClick]="true"
             [adaptivePosition]="false">
-      overflow-y: auto;
+      Popover Auto
     </button>
   </div>
 </div>
 
-
+<h3>Not scroll - adaptative true</h3>
 <div class="only-button">
+  
 <div>
     <button type="button" class="btn btn-danger"
             [popover]="popTemplate"         
             [placement]="'right'" 
             [container]="'body'" 
             [outsideClick]="true">
-      Button 1
+      Popover Right
     </button>
 </div>
 <div>
@@ -43,7 +44,7 @@
             [placement]="'auto'" 
             [container]="'body'" 
             [outsideClick]="true">
-      Button 2
+      Popover Auto
     </button>
 </div>
 </div>
