@@ -1,9 +1,19 @@
 
 button{
   margin: 40px auto;
+  display: blocK;
 }
 
 .container {
   max-height: 100px;
   border: 1px solid #f0f0f0;
 }
+
+.container button {
+  float: right;
+}
+
+.only-button  {
+  float: right;
+}
+
